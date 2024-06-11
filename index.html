@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11 Notes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+            background: linear-gradient(135deg, #ffcc70, #ff5757, #ffcc70);
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .note-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .note-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 300px;
+            background-color: #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            overflow: hidden;
+            margin: 10px;
+            transition: transform 0.3s;
+        }
+
+        .note-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .note-info, .note-view {
+            padding: 20px;
+        }
+
+        .note-info {
+            flex: 1;
+        }
+
+        .note-view {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #007bff;
+            color: white;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .note-view button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #0056b3;
+            color: #fff;
+            transition: background-color 0.3s;
+        }
+
+        .note-view button:hover {
+            background-color: #004080;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://see.fontimg.com/api/renderfont4/4VwY/eyJyIjoiZnMiLCJoIjoxMzAsInciOjIwMDAsImZzIjo2NSwiZmdjIjoiI0VEMzc1OSIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/QnJhaW5zdG9ybSBjbGFzc2VzIA/youth-touch-demo-regular.png" alt="Class 11 Banner">
+        <h1>Class 11 Notes</h1>
+        <div class="note-container">
+            <div class="note-card">
+                <div class="note-info">
+                    <h2>Chemistry Syllabus  2024-25</h2>
+                    <p>Class 11 Chemistry syllabus 2024-25 students can view here or download.</p>
+                </div>
+                <div class="note-view">
+                    <button onclick="viewNote('https://drive.google.com/file/d/1H0PnfGSxQJC9xBDXkU2A559TgjeUrLKN/view?usp=drivesdk')">Download it</button>
+                </div>
+            </div>
+
+            <div class="note-card">
+                <div class="note-info">
+                    <h2>Chemistry : D.M Sir </h2>
+                    <p>Some basic concepts of chemistry notes class 11.</p>
+                </div>
+                <div class="note-view">
+                    <button onclick="viewNote('https://drive.google.com/file/d/1H5nmV3lhqLN_82RCzMNdDht9fz9-k82o/view?usp=drivesdk')">Download Note</button>
+                </div>
+            </div>
+
+            <div class="note-card">
+                <div class="note-info">
+                    <h2>Mathematics: N.K Sir</h2>
+                    <p>Comming Soon </p>
+                </div>
+                <div class="note-view">
+                    <button onclick="viewNote('note3.pdf')">View Note</button>
+                </div>
+            </div>
+
+            <div class="note-card">
+                <div class="note-info">
+                    <h2>Biology: </h2>
+                    <p>Comming soon</p>
+                </div>
+                <div class="note-view">
+                    <button onclick="viewNote('note4.pdf')">View Note</button>
+                </div>
+            </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function viewNote(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
